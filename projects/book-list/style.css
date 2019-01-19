@@ -1,0 +1,11 @@
+.col.s12 > .btn {
+    width: 100%;
+}
+
+.button-margin{
+    margin: 50px 0 50px 0;
+}
+
+.card-panel{
+    padding: 10px
+}

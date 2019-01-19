@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-align">Add book</h1>
+
+        <div class="row">
+            <div class="col s12 alert">
+            </div>
+            <form id="book-form">
+                <div class="col s12">
+                    <div class="input-field">
+                        <input type="text" id="title" class="title">
+                        <label for="title">Book title</label>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="input-field">
+                        <input type="text" id="author" class="author">
+                        <label for="author">Author</label>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="input-field">
+                        <input type="number" id="isbn" class="isbn">
+                        <label for="isbn">ISBN</label>
+                    </div>
+                </div>
+                <div class="col s12 button-margin">
+                    <input type="submit" value="submit" class="btn">
+                </div>
+            </form>
+
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Book title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app-es6.js"></script>
+</body>
+
+</html>
