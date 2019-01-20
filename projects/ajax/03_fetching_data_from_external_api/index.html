@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .card-panel{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="center-align">Rajnikanth jokes generator</h2>
+        <div class="card-panel red alert"></div>
+        <div class="row">
+            <div class="col s6">
+                <input id="number" type="number" class="validate">
+                <label for="number">Number of jokes</label>
+            </div>
+            <div class="col s6">
+                <button class="btn" id="get-jokes">Get jokes</button>
+            </div>
+        </div>
+
+        <div>
+            <ul class="collection" id="joke-list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

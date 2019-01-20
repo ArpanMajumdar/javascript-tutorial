@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .button {
+            margin: 20px auto 40px auto;
+        }
+
+        .output {
+            margin: 40px auto 40px auto;
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="button">
+            <button id="button-1" class="btn">Get customer</button>
+            <div id="output" class="output"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Company</td>
+                    <td>Phone #</td>
+                </tr>
+            </thead>
+
+            <tbody id="customer-table">
+            </tbody>
+        </table>
+
+        <div class="button">
+            <button id="button-2" class="btn">Get customers</button>
+            <div id="output" class="output"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Company</td>
+                    <td>Phone #</td>
+                </tr>
+            </thead>
+
+            <tbody id="customers-table">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <br><br>
+
+</body>
+
+</html>
