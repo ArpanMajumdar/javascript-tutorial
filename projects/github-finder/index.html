@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Finder</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">GitHub Finder</a>
+        </div>
+    </nav>
+
+    <div class="jumbotron container searchContainer">
+        <h1 class="display-5">Search github users</h1>
+        <p class="lead">Enter a username to search profile and repos.</p>
+        <hr class="my-4">
+        <!-- <div class="alert alert-danger">Profile not found</div> -->
+        <div class="form-group searchInput">
+            <label class="col-form-label" for="search-user">Search GitHub user</label>
+            <input type="text" class="form-control" placeholder="github_username" id="search-user">
+        </div>
+
+        <div id="profile">
+            <!-- <div class="card card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="https://avatars3.githubusercontent.com/u/16863514?v=4" alt="">
+                        <button type="button" class="btn btn-primary btn-block mt-3">View profile</button>
+                    </div>
+                    <div class="col-md-9">
+                        <span class="badge badge-pill badge-primary p-3">Public repos 22</span>
+                        <span class="badge badge-pill badge-warning p-3">Public gists 0</span>
+                        <span class="badge badge-pill badge-success p-3">Followers 1</span>
+                        <span class="badge badge-pill badge-info p-3">Following 4</span>
+
+                        <table class="table table-hover mt-3">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Company</th>
+                                    <td>Target Corporation</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Website/Blog</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Location</th>
+                                    <td>Bengaluru</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Member since</th>
+                                    <td>2016-01-24T11:47:03Z</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="repos" class="mt-5">
+            <!-- <div class="card card-body mb-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://github.com/ArpanMajumdar/javascript-tutorial">javascript-tutorial</a>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="badge badge-success badge-pill p-2">Stars 0</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="badge badge-warning badge-pill p-2">Watchers 0</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="badge badge-danger badge-pill p-2">Forks 0</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-light">
+        GitHub Finder &copy;
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

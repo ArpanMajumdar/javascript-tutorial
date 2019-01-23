@@ -8,40 +8,34 @@ const outputCard = document.getElementById('output');
 
 function getTextData(event) {
     fetch('test.txt')
-        .then(function (response) {
-            return response.text();
-        }).then(function (textData) {
-            outputCard.innerHTML = textData;
-        }).catch(function (err) {
-            console.log(err);
-        });
+        .then(response => response.text())
+        .then(textData => outputCard.innerHTML = textData)
+        .catch(err => console.log(err));
 }
 
 function getJsonData(event) {
     fetch('users.json')
-        .then(function (response) {
-            return response.json();
-        }).then(function (users) {
+        .then(response => response.json())
+        .then(users => {
             let output = '<ul class="collection">';
-            users.forEach(function (user) {
-                output += `<li class="collection-item">${user.name}</li>`;
-            });
-            output+='</ul>'
+            users.forEach(user =>
+                output += `<li class="collection-item">${user.name}</li>`);
+            output += '</ul>'
             outputCard.innerHTML = output;
         })
+        .catch(err => console.log(err));
 }
 
 function getApiData(event) {
     fetch('https://api.github.com/users')
-        .then(function (response) {
-            return response.json();
-        }).then(function (users) {
+        .then(response => response.json())
+        .then(users => {
             let output = '<ul class="collection">';
-            users.forEach(function (user) {
-                output += `<li class="collection-item">${user.login}</li>`;
-            });
-            output+='</ul>'
+            users.forEach(user =>
+                output += `<li class="collection-item">${user.login}</li>`);
+            output += '</ul>'
             outputCard.innerHTML = output;
         })
+        .catch(err => console.log(err));
 }
 
